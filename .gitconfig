@@ -1,0 +1,26 @@
+[alias]
+    st = status
+    ci = commit
+    co = checkout
+    ds = diff --staged
+    hist = log --pretty=format:'%Cblue%h%Creset %ad | %Cgreen%s%d%Creset [%an]' --graph --date=short
+	
+[credential]
+	helper = cache --timeout=2628000
+[core]
+	editor = vim
+[grep]                                                                                                                           
+    linenumber = true
+[color]
+  ui = auto
+  whitespace = red
+[color "status"]
+  added = green bold
+  changed = red
+  untracked = magenta
+[color "diff"] 
+  whitespace = green reverse 
+[core] 
+  whitespace=-indent-with-non-tab,trailing-space,cr-at-eol,tab-in-indent 
+[push]
+	default = matching
